@@ -34,6 +34,8 @@ export default function Header() {
         ref={icon}
         onClick={() => {
           document.documentElement.classList.toggle("dark")
+          toggleIcon.current.classList.toggle("bx-moon")
+          toggleIcon.current.classList.toggle("bx-sun")
         }}
         className={styles.toggler}
       >
