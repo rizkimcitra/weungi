@@ -1,5 +1,7 @@
 ## Weungi
 
+Weungi, untuk melatih skill saya dalam mengkonsumsi API diReactJS dengan axios
+
 ### run on your local machine
 
 komputer kamu harus sudah terinstall NodeJS versi 10.xx dan NPM versi 4.xx
