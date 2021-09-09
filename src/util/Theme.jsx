@@ -1,5 +1,5 @@
-import { gsap } from "gsap"
-import React, { createContext, useEffect, useRef } from "react"
+import { gsap } from 'gsap'
+import React, { createContext, useEffect, useRef } from 'react'
 
 export const Theme = createContext()
 export default function ThemeProvider(props) {
@@ -13,31 +13,38 @@ export default function ThemeProvider(props) {
     gsap.from(title.current, {
       opacity: 0,
       x: -50,
-      transitionProperty: "ease",
+      transitionProperty: 'ease',
     })
 
     gsap.from(icon.current, {
       opacity: 0,
       x: 50,
-      transitionProperty: "ease",
+      transitionProperty: 'ease',
     })
 
     gsap.from(heading.current, {
       opacity: 0,
       y: 50,
-      transitionProperty: "ease",
+      transitionProperty: 'ease',
     })
 
     gsap.from(searchbar.current, {
       opacity: 0,
       y: 50,
       delay: 0.5,
-      transitionProperty: "ease",
+      transitionProperty: 'ease',
     })
   }, [])
 
   return (
-    <Theme.Provider value={{ title, icon, heading, searchbar, toggleIcon }}>
+    <Theme.Provider
+      value={{
+        title,
+        icon,
+        heading,
+        searchbar,
+        toggleIcon,
+      }}>
       {props.children}
     </Theme.Provider>
   )
